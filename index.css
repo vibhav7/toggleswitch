@@ -1,0 +1,71 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    text-align: center;
+    /* border-radius: 25%; */
+    width: 100%;
+    height: 70px;
+    display: table;
+    background-color: aqua;
+}
+.switch-table{
+    display: table;
+    width: 100%;
+    height: 70px;
+    background-color: grey;
+}
+.switch-table-cell{
+    vertical-align: middle;
+    border: 1px solid brown;
+    display: table-cell;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+}
+.switch-table-cell:hover{
+    background-color: peru;
+    transition: 2s;
+}
+.switch-table-cell-empty{
+    display: table-cell;
+    width: 30%;
+}
+
+.switch-bar{
+    vertical-align: middle;
+    border: 1px solid brown;
+    border-radius: 25%;
+    display: table-cell;
+    width: 250px;
+    background-color: saddlebrown;
+}
+.switch-button-on{
+    background-color: teal;
+    border-radius: 25%;
+    width: 100px;
+    height: 70px;
+    position: relative;
+    animation: on 1s;
+    animation-fill-mode: forwards;
+}
+.switch-button-off{
+    background-color: teal;
+    border-radius: 25%;
+    width: 100px;
+    height: 70px;
+    position: relative;
+    animation: off 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes off {
+    0%   {background-color:red; left:0px; top:0px;}
+    100%  {background-color:yellow; left:150px; top:0px;}
+}
+
+@keyframes on {
+    0% {background-color: yellow; left:150px; top:0px;}
+    100% {background-color: red; left: 0px; top:0px;}
+}
